@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio | Tech, Business & Law</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="hero">
+            <h1 id="profile-name">TO VAN PHAP</h1>
+            <h3 id="profile-focus">AI Applications | Legal Tech | Business Strategy</h3>
+            <p id="profile-tagline">Bridging Technology, Business Innovation, and Legal Governance to drive impactful AI solutions.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/vanphapto/" target="_blank" class="btn btn-outline">
+                    <span class="material-symbols-outlined">work</span> LinkedIn
+                </a>
+                <a href="mailto:phapv61@gmail.com" class="btn btn-primary">
+                    <span class="material-symbols-outlined">mail</span> Contact Me
+                </a>
+            </div>
+        </header>
+
+        <hr class="divider">
+
+        <section class="projects">
+            <h2><span class="material-symbols-outlined icon-heading">rocket_launch</span> Featured Projects</h2>
+            
+            <div class="filter-tabs">
+                <button class="tab-btn active" data-filter="all">All</button>
+                <button class="tab-btn" data-filter="ai project">AI Projects</button>
+                <button class="tab-btn" data-filter="application">Applications</button>
+                <button class="tab-btn" data-filter="other">Others</button>
+            </div>
+
+            <div class="grid-projects" id="projects-container">
+                </div>
+        </section>
+
+        <hr class="divider">
+
+        <section class="credentials">
+            <h2><span class="material-symbols-outlined icon-heading">verified</span> Degrees & Certifications</h2>
+            <div class="grid-4-cols">
+                
+                <div class="pillar card" id="col-degree">
+                    <div class="pillar-header">
+                        <span class="material-symbols-outlined icon-degree">school</span>
+                        <h3>Degrees</h3>
+                    </div>
+                    <ul class="cert-list" id="cert-degree"></ul>
+                </div>
+
+                <div class="pillar card" id="col-language">
+                    <div class="pillar-header">
+                        <span class="material-symbols-outlined icon-lang">translate</span>
+                        <h3>Languages</h3>
+                    </div>
+                    <ul class="cert-list" id="cert-language"></ul>
+                </div>
+
+                <div class="pillar card" id="col-specialized">
+                    <div class="pillar-header">
+                        <span class="material-symbols-outlined icon-spec">workspace_premium</span>
+                        <h3>Specialized</h3>
+                    </div>
+                    <ul class="cert-list" id="cert-specialized"></ul>
+                </div>
+
+                <div class="pillar card" id="col-other">
+                    <div class="pillar-header">
+                        <span class="material-symbols-outlined icon-other">more_horiz</span>
+                        <h3>Others</h3>
+                    </div>
+                    <ul class="cert-list" id="cert-other"></ul>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <div id="project-modal" class="modal">
+        <div class="modal-content card">
+            <span class="close-btn material-symbols-outlined">close</span>
+            <img id="modal-img" src="" alt="Project Preview" class="modal-img">
+            <div class="modal-body">
+                <h2 id="modal-title">Project Title</h2>
+                <p id="modal-context">Project description goes here...</p>
+                <div class="modal-actions">
+                    <a id="modal-pdf" href="#" target="_blank" class="btn btn-outline btn-pdf">
+                    <span class="material-symbols-outlined">visibility</span> Detail
+                    </a>
+                    <a id="modal-source" href="#" target="_blank" class="btn btn-outline">
+                        <span class="material-symbols-outlined">code</span> Source Code
+                    </a>
+                    <a id="modal-demo" href="#" target="_blank" class="btn btn-primary">
+                        <span class="material-symbols-outlined">open_in_new</span> Live Demo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
